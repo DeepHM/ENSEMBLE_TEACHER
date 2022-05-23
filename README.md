@@ -1,7 +1,7 @@
 
 # My Paper Title
 
-This repository is the official implementation of Ensemble Teacher: Semi-Supervised Semantic Segmentation with Teacher’s Cross-Pseudo Supervision.
+This repository is the official implementation of _Ensemble Teacher: Semi-Supervised Semantic Segmentation with Teacher’s Cross-Pseudo Supervision_.
 
 >📋  Optional: include a graphic explaining your approach/main result, bibtex entry, link to demos, blog posts and tutorials
 
