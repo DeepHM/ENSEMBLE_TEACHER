@@ -56,6 +56,7 @@
 
    In our project, dataset (VOC, Cityscapes) and pre-trained models are constructed exactly like Semi-Supervised Semantic Segmentation with Cross Pseudo Supervision
    ([CPS](https://arxiv.org/abs/2106.01226)) studies.
+ 
    Refer to the link and download it and configure it as below. (https://github.com/charlesCXK/TorchSemiSeg/blob/main/docs/getting_started.md)
 
    ```shell
