@@ -45,4 +45,20 @@
    $ apt-get install libglib2.0-0
    ```
   
+6. **Install python libraries.**
+
+   ```shell
+   $ cd ..
+   $ bash requirements.sh
+   ```  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
  
