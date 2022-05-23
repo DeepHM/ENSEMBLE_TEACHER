@@ -47,6 +47,7 @@ $ export learning_rate=0.0025
 $ export snapshot_iter=1
 $ export labeled_ratio=8
 
+# Start training
 $ bash train_org.sh
 ```
 
