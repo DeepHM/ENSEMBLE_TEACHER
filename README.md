@@ -127,7 +127,7 @@ $ bash train_ema.sh
 
 ## Evaluation
 
-When you run the evaluation process, the log_df.csv file is created and the results are accumulated and updated.
+Running the evaluation process creates a log_df.csv file and updates the results cumulatively.
 
 #### - PASCAL VOC 2012
 
