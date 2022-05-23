@@ -179,13 +179,51 @@ $ bash eval.sh
 
 ## Results
 
+In semi-supervised learning, batch-size is important. (We train Cityscapes dataset in batch 4 due to GPU resource, The batch size of the PASCAL VOC dataset is 8)
+
 Our model achieves the following performance on :
 
-### [Image Classification on ImageNet](https://paperswithcode.com/sota/image-classification-on-imagenet)
+### [Semi-supervised semantic segmentation on PASCAL VOC 2012 val set](https://paperswithcode.com/task/semi-supervised-semantic-segmentation)
 
-| Model name         | Top 1 Accuracy  | Top 5 Accuracy |
-| ------------------ |---------------- | -------------- |
-| My awesome model   |     85%         |      95%       |
+1. Resnet-50
+
+
+| Model name  | 1/16(662)  | 1/8(1323) | 1/4(2646) | 1/2(5291) |
+| -------- | -------- | -------- | -------- | -------- |
+| CPS   |     72.50         |      74.75       |     **76.40**         |      76.60       |
+| Our model   |     **72.86**         |      **75.20**       |     76.13         |      **76.95**       |
+
+
+2. Resnet-101
+
+
+| Model name  | 1/16(662)  | 1/8(1323) | 1/4(2646) | 1/2(5291) |
+| -------- | -------- | -------- | -------- | -------- |
+| CPS   |     75.13         |      **77.72**       |     78.81         |      79.20       |
+| Our model   |     **76.04**         |      77.32       |     **79.38**         |      **79.69**       |
+
+
+### [Semi-supervised semantic segmentation on Cityscapes val set](https://paperswithcode.com/task/semi-supervised-semantic-segmentation)
+
+1. Resnet-50
+
+
+| Model name  | 1/16(662)  | 1/8(1323) | 1/4(2646) | 1/2(5291) |
+| -------- | -------- | -------- | -------- | -------- |
+| CPS   |     66.29         |      68.35       |     69.17         |      69.29       |
+| Our model   |     **68.03**         |      **70.01**       |     **72.93**         |      **72.84**       |
+
+
+1. Resnet-101
+
+
+| Model name  | 1/16(662)  | 1/8(1323) | 1/4(2646) | 1/2(5291) |
+| -------- | -------- | -------- | -------- | -------- |
+| CPS   |     68.73         |      69.41       |     72.36         |      73.54       |
+| Our model   |     **68.73**         |      **70.74**       |     **73.62**         |      **73.73**       |
+
+
+
 
 >📋  Include a table of results from your paper, and link back to the leaderboard for clarity and context. If your main result is a figure, include that figure and link to the command or notebook to reproduce it. 
 
