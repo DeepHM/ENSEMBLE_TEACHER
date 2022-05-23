@@ -45,7 +45,4 @@
    $ apt-get install libglib2.0-0
    ```
   
-  
-## Optional
-We recommend using docker to run experiments. Here is the docker name: charlescxk/ssc:2.0 .
-You could pull it from https://hub.docker.com/ and mount your local file system to it.
+ 
