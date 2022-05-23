@@ -3,7 +3,7 @@
 
 This repository is the official implementation of _Ensemble Teacher: Semi-Supervised Semantic Segmentation with Teacher’s Cross-Pseudo Supervision_.
 
-<img src="https://user-images.githubusercontent.com/37736774/169817612-9586d7cd-3b43-4e85-96c6-e9e2316378a3.PNG" width="200" height="400"/>
+<img src="https://user-images.githubusercontent.com/37736774/169817612-9586d7cd-3b43-4e85-96c6-e9e2316378a3.PNG" width="500" height="400"/>
 
 
 ## Requirements
