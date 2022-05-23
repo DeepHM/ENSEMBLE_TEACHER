@@ -22,11 +22,14 @@
    ```
 
 3. ** Clone this repository.**
+   ```shell
+   $ git clone https://github.com/kwakhyunmin/ENSEMBLE_TEACHER.git
+   ```
 
 5. **Docker run.**
 
    ```shell
-   $ sudo docker run -it --gpus all --shm-size {Set the size of shared memory} --name ens_teacher -v {your directory}:/workspace/ensemble_teacher pytorch/pytorch:1.8.0-cuda11.1-cudnn8-devel /bin/bash
+   $ sudo docker run -it --gpus all --shm-size {Set the size of shared memory} --name ens_teacher -v {your directory(git clone repo)}:/workspace/ensemble_teacher pytorch/pytorch:1.8.0-cuda11.1-cudnn8-devel /bin/bash
    # For example:
    $ sudo docker run -it --gpus all --shm-size 16G --name ens_teacher -v /mnt/nas4/hm/semi_semantic/ensemble_teacher/ensemble_teacher:/workspace/ensemble_teacher pytorch/pytorch:1.8.0-cuda11.1-cudnn8-devel /bin/bash
    ```
