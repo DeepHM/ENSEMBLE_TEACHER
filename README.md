@@ -28,7 +28,7 @@ Thus, the training epochs are as follows :
 |VOC|32|34|40|60|
 |Cityscapes|64|68|80|120|
 
-#### PASCAL VOC 2012
+#### - PASCAL VOC 2012
 
 1. To train the CPS model re-implemented in the paper, run the following command.
 
@@ -75,6 +75,56 @@ export labeled_ratio=8
 # Start training
 $ bash train_ema.sh
 ```
+
+#### - Cityscapes
+
+1. To train the CPS model re-implemented in the paper, run the following command.
+
+```shell
+$ mkdir output_city/{save_dir}  # i.e. mkdir output_city/city8_res50_cutmix_B4
+$ cd exp.city/ensemble_teacher+cutmix
+
+# Open the train_org.sh file and set up your training environment.
+# For example : 
+$ export volna="../../"
+$ export NGPUS=2
+$ export OUTPUT_PATH="../../output_city/city8_res50_cutmix_B4" 
+$ export snapshot_dir=$OUTPUT_PATH
+$ export pretrained_model=$volna"DATA/pytorch-weight/resnet50_v1c.pth"  # resnet50_v1c , resnet101_v1c.pth
+
+$ export batch_size=4   
+$ export learning_rate=0.02
+$ export snapshot_iter=1
+$ export labeled_ratio=8
+
+# Start training
+$ bash train_org.sh
+```
+
+2. To train our approach model in the paper, run the following command:
+
+```shell
+$ mkdir output_city/{save_dir}  # i.e. mkdir output_city/city8_res50_cutmix_B4_EMA
+$ cd exp.voc/ensemble_teacher+cutmix
+
+# Open the train_ema.sh file and set up your training environment.
+# For example : 
+$ export volna="../../"
+$ export NGPUS=2
+$ export OUTPUT_PATH="../../output_city/city8_res50_cutmix_B4_EMA" 
+$ export snapshot_dir=$OUTPUT_PATH
+$ export pretrained_model=$volna"DATA/pytorch-weight/resnet50_v1c.pth"  # resnet50_v1c , resnet101_v1c.pth
+
+$ export batch_size=4   
+$ export learning_rate=0.02
+$ export snapshot_iter=1
+$ export labeled_ratio=8
+
+# Start training
+$ bash train_ema.sh
+```
+
+
 
 
 >📋  Describe how to train the models, with example commands on how to train the models in your paper, including the full training procedure and appropriate hyperparameters.
