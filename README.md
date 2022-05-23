@@ -57,21 +57,21 @@ $ bash train_org.sh
 $ mkdir output_voc/{save_dir}  # i.e. mkdir output_voc/voc8_res50_cutmix_B8_EMA
 $ cd exp.voc/ensemble_teacher+cutmix
 
-# Open the train_org.sh file and set up your training environment.
+# Open the train_ema.sh file and set up your training environment.
 # For example : 
-$ export volna="../../"
-$ export NGPUS=2
-$ export OUTPUT_PATH="../../output_voc/voc8_res50_cutmix_B8"
-$ export snapshot_dir=$OUTPUT_PATH
-$ export pretrained_model=$volna"DATA/pytorch-weight/resnet50_v1c.pth" # resnet50_v1c , resnet101_v1c.pth
+export volna="../../"
+export NGPUS=2
+export OUTPUT_PATH="../../output_voc/voc8_res50_cutmix_B8_EMA"
+export snapshot_dir=$OUTPUT_PATH
+export pretrained_model=$volna"DATA/pytorch-weight/resnet50_v1c.pth" # resnet50_v1c , resnet101_v1c.pth
 
-$ export batch_size=8
-$ export learning_rate=0.0025
-$ export snapshot_iter=1
-$ export labeled_ratio=8
+export batch_size=8
+export learning_rate=0.0025 
+export snapshot_iter=1
+export labeled_ratio=8
 
 # Start training
-$ bash train_org.sh
+$ bash train_ema.sh
 ```
 
 
