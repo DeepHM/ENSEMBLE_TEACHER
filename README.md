@@ -20,11 +20,15 @@ Please refer to this [installation](docs/installation.md) document to install de
 
 ## Training
 
-To train the model(s) in the paper, run this command:
+1. To train the CPS model re-implemented in the paper, run the following command.
 
 ```train
+$ mkdir output_voc/{save_dir}  # i.e. mkdir output_voc/voc8_res50_cutmix_B8
+$ cd 
 python train.py --input-data <path_to_data> --alpha 10 --beta 20
 ```
+
+
 
 >📋  Describe how to train the models, with example commands on how to train the models in your paper, including the full training procedure and appropriate hyperparameters.
 
