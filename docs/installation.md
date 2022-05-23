@@ -15,11 +15,10 @@
    $ sudo systemctl restart docker
    ```
 
-2. **Clone this repo.**
+2. **Docker pull.**
 
    ```shell
-   $ git clone https://github.com/charlesCXK/TorchSemiSeg.git
-   $ cd TorchSemiSeg
+   $ docker pull pytorch/pytorch:1.8.0-cuda11.1-cudnn8-devel
    ```
 
 3. **Install dependencies.**
