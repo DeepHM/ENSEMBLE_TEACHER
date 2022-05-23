@@ -3,7 +3,7 @@
 1. **Clone this repo.**
 
    ```shell
-   Our project was tested in the official docker environment for reproducibility. (pytorch 1.8.0-cuda11.1-cudnn8-devel)
+   # Our project was tested in the official docker environment for reproducibility. (pytorch 1.8.0-cuda11.1-cudnn8-devel)
 
    $ sudo wget -qO- http://get.docker.com/ | sh
    $ cd TorchSemiSeg
