@@ -21,13 +21,14 @@
    $ docker pull pytorch/pytorch:1.8.0-cuda11.1-cudnn8-devel
    ```
 
-3. **Install dependencies.**
+3. **Docker run.**
 
    **(1) Create a conda environment:**
 
    ```shell
-   $ conda env create -f semiseg.yaml
-   $ conda activate semiseg
+   $ sudo docker run -it --gpus all --shm-size {Set the size of shared memory} --name ens_teacher -v {your directory}:/workspace/ensemble_teacher pytorch/pytorch:1.8.0-cuda11.1-cudnn8-devel /bin/bash
+   # For example:
+   $ sudo docker run -it --gpus all --shm-size 16G --name ens_teacher -v /mnt/nas4/hm/semi_semantic/ensemble_teacher/ensemble_teacher:/workspace/ensemble_teacher pytorch/pytorch:1.8.0-cuda11.1-cudnn8-devel /bin/bash
    ```
 
    **(2) Install apex 0.1(needs CUDA)**
