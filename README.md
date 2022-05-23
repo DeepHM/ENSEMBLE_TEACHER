@@ -28,7 +28,7 @@ Thus, the training epochs are as follows :
 |VOC|32|34|40|60|
 |Cityscapes|64|68|80|120|
 
-##### PASCAL VOC 2012
+#### PASCAL VOC 2012
 
 1. To train the CPS model re-implemented in the paper, run the following command.
 
