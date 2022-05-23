@@ -10,6 +10,7 @@ This repository is the official implementation of _Ensemble Teacher: Semi-Superv
 
 #### Environment
 * Ubuntu 20.04.4 LTS
+* NVIDIA GeForce RTX 3090 *2 
 
 To install requirements:
 
