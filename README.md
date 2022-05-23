@@ -20,7 +20,8 @@ Please refer to this [installation](docs/installation.md) document to install de
 ## Training
 
 Our experiments are performed with batch 8 on VOC dataset and batch 4 on Cityscapes dataset.
-Thus, the training epochs are as follows.
+
+Thus, the training epochs are as follows :
 
 |Dataset|1/16|1/8|1/4|1/2|
 |------|---|---|---|---|
