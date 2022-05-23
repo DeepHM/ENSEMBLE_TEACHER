@@ -55,7 +55,7 @@
 7. **Prepare dataset.**
 
    In our project, dataset (VOC, Cityscapes) and pre-trained models are constructed exactly like Semi-Supervised Semantic Segmentation with Cross Pseudo Supervision
-   (CPS) studies.
+   ([CPS](https://arxiv.org/abs/2106.01226)) studies.
 
    ```shell
    DATA/
