@@ -21,12 +21,12 @@
    $ docker pull pytorch/pytorch:1.8.0-cuda11.1-cudnn8-devel
    ```
 
-3. ** Clone this repository.**
+3. **Clone this git-repository.**
    ```shell
    $ git clone https://github.com/kwakhyunmin/ENSEMBLE_TEACHER.git
    ```
 
-5. **Docker run.**
+4. **Docker run.**
 
    ```shell
    $ sudo docker run -it --gpus all --shm-size {Set the size of shared memory} --name ens_teacher -v {your directory(git clone repo)}:/workspace/ensemble_teacher pytorch/pytorch:1.8.0-cuda11.1-cudnn8-devel /bin/bash
@@ -34,11 +34,15 @@
    $ sudo docker run -it --gpus all --shm-size 16G --name ens_teacher -v /mnt/nas4/hm/semi_semantic/ensemble_teacher/ensemble_teacher:/workspace/ensemble_teacher pytorch/pytorch:1.8.0-cuda11.1-cudnn8-devel /bin/bash
    ```
    
-4. **Install NVIDIA APEX.**
+5. **Install NVIDIA APEX.**
 
    ```shell
+   $ apt-get update
    $ cd ensemble_teacher/apex/
-   $ python setup.py install --cpp_ext --cuda_ext
+   $ pip install -v --disable-pip-version-check --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ./
+   $ apt-get update -y
+   $ apt-get install libgl1-mesa-glx
+   $ apt-get install libglib2.0-0
    ```
   
   
