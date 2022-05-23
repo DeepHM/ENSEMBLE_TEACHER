@@ -53,7 +53,7 @@
    ```  
   
 7. **Prepare dataset.**
-   1. aaa
+   - aaa
 
    ```shell
    $ cd ..
