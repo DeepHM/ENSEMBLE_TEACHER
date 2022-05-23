@@ -16,9 +16,17 @@ This repository is the official implementation of _Ensemble Teacher: Semi-Superv
 ## Installation
 
 Please refer to this [installation](docs/installation.md) document to install dependencies and datasets.
-
+Thus, the training epochs are as follows.
+|Dataset|1/16|1/8|1/4|1/2|
+|------|---|---|
+|테스트1|테스트2|테스트3|테스트3|테스트3|
+|테스트1|테스트2|테스트3|테스트3|테스트3|
+|테스트1|테스트2|테스트3|테스트3|테스트3|
 
 ## Training
+
+Our experiments are performed with batch 8 on VOC dataset and batch 4 on Cityscapes dataset.
+
 
 1. To train the CPS model re-implemented in the paper, run the following command.
 
