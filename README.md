@@ -30,7 +30,7 @@ Thus, the training epochs are as follows :
 
 1. To train the CPS model re-implemented in the paper, run the following command.
 
-```train
+```shell
 $ mkdir output_voc/{save_dir}  # i.e. mkdir output_voc/voc8_res50_cutmix_B8
 $ cd exp.voc/ensemble_teacher+cutmix
 
