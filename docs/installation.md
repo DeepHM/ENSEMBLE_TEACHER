@@ -53,6 +53,7 @@
    ```  
   
 7. **Prepare dataset.**
+
    In our project, dataset (VOC, Cityscapes) and pre-trained models are constructed exactly like CPS studies.
 
    ```shell
