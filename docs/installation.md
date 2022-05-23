@@ -41,8 +41,8 @@
    $ cd ensemble_teacher/apex/
    $ pip install -v --disable-pip-version-check --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ./
    $ apt-get update -y
-   $ apt-get install libgl1-mesa-glx
-   $ apt-get install libglib2.0-0
+   $ apt-get install libgl1-mesa-glx -y
+   $ apt-get install libglib2.0-0 -y
    ```
   
 6. **Install python libraries.**
