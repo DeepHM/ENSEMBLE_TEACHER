@@ -225,9 +225,27 @@ Our model achieves the following performance on :
 
 
 
->📋  Include a table of results from your paper, and link back to the leaderboard for clarity and context. If your main result is a figure, include that figure and link to the command or notebook to reproduce it. 
 
 
-## Contributing
 
->📋  Pick a licence and describe how to contribute to your code repository. 
+## Acknowledgement & Citation
+
+The code is highly based on the [CPS](https://github.com/charlesCXK/TorchSemiSeg). Many thanks for their great work.
+
+Citing this project
+
+```shell
+TODO
+```
+
+
+
+
+
+
+
+
+
+
+
+
