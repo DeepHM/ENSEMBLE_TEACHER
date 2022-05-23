@@ -53,11 +53,15 @@
    ```  
   
 7. **Prepare dataset.**
-   - aaa
+   > aaa
 
    ```shell
-   $ cd ..
-   $ bash requirements.sh
+   DATA/
+   |-- city
+   |-- pascal_voc
+   |-- pytorch-weight
+   |   |-- resnet50_v1c.pth
+   |   |-- resnet101_v1c.pth
    ```  
   
   
