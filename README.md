@@ -6,12 +6,14 @@ This repository is the official implementation of _Ensemble Teacher: Semi-Superv
 <img src="https://user-images.githubusercontent.com/37736774/169817612-9586d7cd-3b43-4e85-96c6-e9e2316378a3.PNG" width="800" height="450"/>
 
 
-## Requirements
 
 #### Environment
 * Ubuntu 20.04.4 LTS
 * NVIDIA GeForce RTX 3090(24GB RAM) *2 
 * 128GB RAM
+
+
+## Installation
 
 To install requirements:
 
