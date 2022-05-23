@@ -15,7 +15,7 @@ This repository is the official implementation of _Ensemble Teacher: Semi-Superv
 
 ## Installation
 
-Please refer to this [MY-LINK](docs/installation.md) installation document to install dependencies and datasets.
+Please refer to this [installation](docs/installation.md) document to install dependencies and datasets.
 
 
 >📋  Describe how to set up the environment, e.g. pip/conda/docker commands, download datasets, etc...
