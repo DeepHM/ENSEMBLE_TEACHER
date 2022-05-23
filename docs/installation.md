@@ -21,22 +21,23 @@
    $ docker pull pytorch/pytorch:1.8.0-cuda11.1-cudnn8-devel
    ```
 
-3. **Docker run.**
+3. ** Clone this repository.**
 
-   **(1) Create a conda environment:**
+5. **Docker run.**
 
    ```shell
    $ sudo docker run -it --gpus all --shm-size {Set the size of shared memory} --name ens_teacher -v {your directory}:/workspace/ensemble_teacher pytorch/pytorch:1.8.0-cuda11.1-cudnn8-devel /bin/bash
    # For example:
    $ sudo docker run -it --gpus all --shm-size 16G --name ens_teacher -v /mnt/nas4/hm/semi_semantic/ensemble_teacher/ensemble_teacher:/workspace/ensemble_teacher pytorch/pytorch:1.8.0-cuda11.1-cudnn8-devel /bin/bash
    ```
-
-   **(2) Install apex 0.1(needs CUDA)**
+   
+4. **Install NVIDIA APEX.**
 
    ```shell
-   $ cd ./furnace/apex
+   $ cd ensemble_teacher/apex/
    $ python setup.py install --cpp_ext --cuda_ext
    ```
+  
   
 ## Optional
 We recommend using docker to run experiments. Here is the docker name: charlescxk/ssc:2.0 .
