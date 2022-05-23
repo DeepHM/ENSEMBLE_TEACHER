@@ -125,11 +125,58 @@ $ bash train_ema.sh
 ```
 
 
-
-
->📋  Describe how to train the models, with example commands on how to train the models in your paper, including the full training procedure and appropriate hyperparameters.
-
 ## Evaluation
+
+When you run the evaluation process, the log_df.csv file is created and the results are accumulated and updated.
+
+#### - PASCAL VOC 2012
+
+```shell
+$ cd exp.voc/ensemble_teacher+cutmix
+# Open the eval.sh file and set up your training environment.
+# For example : 
+$ export volna="../../"
+$ export NGPUS=2
+$ export OUTPUT_PATH="../../output_voc/voc8_res50_cutmix_B8_EMA"
+$ export snapshot_dir=$OUTPUT_PATH
+$ export pretrained_model=$volna"DATA/pytorch-weight/resnet50_v1c.pth" # resnet50_v1c , resnet101_v1c.pth
+## Set ensemble prediction options. See network.py
+## In the paper, predictions for one model are made using the v0_2 or v1_2 option.
+## v0 : Using Model_1 , v0_2 : Using Model_2 , v1 : Using EMA_Model_1 , v1_2 : Using EMA_Model_2 
+## v2 : Ensemble prediction(soft-voting) using Model_1 and Model_2 , v3 : Ensemble prediction(soft-voting) using EMA_Model_1 and EMA_Model_2
+## v4 :Ensemble prediction(soft-voting) using Model_1, Model_2, EMA_Model_1, EMA_Model_2
+$ export ensemble="v2"
+$ export batch_size=8
+
+# Start evaluation
+$ bash eval.sh
+```
+
+#### - Cityscapes
+
+```shell
+$ cd exp.city/ensemble_teacher+cutmix
+# Open the eval.sh file and set up your training environment.
+# For example : 
+$ export volna="../../"
+$ export NGPUS=2
+$ export OUTPUT_PATH="../../output_city/city8_res50_cutmix_B4_EMA"
+$ export snapshot_dir=$OUTPUT_PATH
+$ export pretrained_model=$volna"DATA/pytorch-weight/resnet50_v1c.pth" # resnet50_v1c , resnet101_v1c.pth
+## Set ensemble prediction options. See network.py
+## In the paper, predictions for one model are made using the v0_2 or v1_2 option.
+## v0 : Using Model_1 , v0_2 : Using Model_2 , v1 : Using EMA_Model_1 , v1_2 : Using EMA_Model_2 
+## v2 : Ensemble prediction(soft-voting) using Model_1 and Model_2 , v3 : Ensemble prediction(soft-voting) using EMA_Model_1 and EMA_Model_2
+## v4 :Ensemble prediction(soft-voting) using Model_1, Model_2, EMA_Model_1, EMA_Model_2
+export ensemble="v3"
+export batch_size=8
+
+# Start evaluation
+$ bash eval.sh
+```
+
+
+
 
 To evaluate my model on ImageNet, run:
 
