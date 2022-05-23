@@ -52,6 +52,13 @@
    $ bash requirements.sh
    ```  
   
+7. **Prepare dataset.**
+   1. aaa
+
+   ```shell
+   $ cd ..
+   $ bash requirements.sh
+   ```  
   
   
   
