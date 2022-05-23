@@ -9,7 +9,7 @@ This repository is the official implementation of _Ensemble Teacher: Semi-Superv
 ## Requirements
 
 #### Environment
-
+* Ubuntu 20.04.4 LTS
 
 To install requirements:
 
