@@ -1,18 +1,18 @@
 ## Installation
 
-1. **Clone this repo.**
+1. **Install Docker.**
 
    ```shell
    # Our project was tested in the official docker environment for reproducibility. (pytorch 1.8.0-cuda11.1-cudnn8-devel)
 
    $ sudo wget -qO- http://get.docker.com/ | sh
-   $ cd TorchSemiSeg
-   ```
-
-
-   ```shell
-   $ sudo wget -qO- http://get.docker.com/ | sh
-   $ cd TorchSemiSeg
+   
+   $ distribution=$(. /etc/os-release;echo $ID$VERSION_ID) \
+   && curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add - \
+   && curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list
+   $ sudo apt-get update
+   $ sudo apt-get install -y nvidia-docker2
+   $ sudo systemctl restart docker
    ```
 
 2. **Clone this repo.**
