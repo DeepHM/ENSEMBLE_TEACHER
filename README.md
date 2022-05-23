@@ -144,7 +144,7 @@ $ export pretrained_model=$volna"DATA/pytorch-weight/resnet50_v1c.pth" # resnet5
 ## In the paper, predictions for one model are made using the v0_2 or v1_2 option.
 ## v0 : Using Model_1 , v0_2 : Using Model_2 , v1 : Using EMA_Model_1 , v1_2 : Using EMA_Model_2 
 ## v2 : Ensemble prediction(soft-voting) using Model_1 and Model_2 , v3 : Ensemble prediction(soft-voting) using EMA_Model_1 and EMA_Model_2
-## v4 :Ensemble prediction(soft-voting) using Model_1, Model_2, EMA_Model_1, EMA_Model_2
+## v4 :Ensemble prediction(soft-voting) using Model_1, Model_2, EMA_Model_1 and EMA_Model_2
 $ export ensemble="v2"
 $ export batch_size=8
 
@@ -167,7 +167,7 @@ $ export pretrained_model=$volna"DATA/pytorch-weight/resnet50_v1c.pth" # resnet5
 ## In the paper, predictions for one model are made using the v0_2 or v1_2 option.
 ## v0 : Using Model_1 , v0_2 : Using Model_2 , v1 : Using EMA_Model_1 , v1_2 : Using EMA_Model_2 
 ## v2 : Ensemble prediction(soft-voting) using Model_1 and Model_2 , v3 : Ensemble prediction(soft-voting) using EMA_Model_1 and EMA_Model_2
-## v4 :Ensemble prediction(soft-voting) using Model_1, Model_2, EMA_Model_1, EMA_Model_2
+## v4 :Ensemble prediction(soft-voting) using Model_1, Model_2, EMA_Model_1 and EMA_Model_2
 export ensemble="v3"
 export batch_size=8
 
@@ -176,23 +176,6 @@ $ bash eval.sh
 ```
 
 
-
-
-To evaluate my model on ImageNet, run:
-
-```eval
-python eval.py --model-file mymodel.pth --benchmark imagenet
-```
-
->📋  Describe how to evaluate the trained models on benchmarks reported in the paper, give commands that produce the results (section below).
-
-## Pre-trained Models
-
-You can download pretrained models here:
-
-- [My awesome model](https://drive.google.com/mymodel.pth) trained on ImageNet using parameters x,y,z. 
-
->📋  Give a link to where/how the pretrained models can be downloaded and how they were trained (if applicable).  Alternatively you can have an additional column in your results table with a link to the models.
 
 ## Results
 
